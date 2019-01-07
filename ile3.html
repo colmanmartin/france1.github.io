@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ile D'Elle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  .jumbotron { 
+    background-color: #3333ff; /* blue */
+/*/*    */color: #fff;
+    padding: 100px 25px;
+         
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50"
+background-color="#628794
+"
+>
+
+<nav class="navbar navbar-expand-sm  navbar-dark fixed-top">  
+  <ul class=
+  "navbar-nav">
+  <style>
+    background-color= #6f42c1;
+  </style>
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Description</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Local Views</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Contact
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section41">Contact Details</a>
+        <a class="dropdown-item" href="#section42">Map</a>
+      </div>
+      <li class="nav-item">
+      <a class="nav-link" href="#section5">  House Views</a>
+    </li>
+    </li>
+  </ul>
+</nav>
+
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+  <!--home  -->
+  <div class="jumbotron text-center">
+  <h1>Holiday Home in West France</h1> 
+<p> Rural location by River Vendee</p>
+  
+</div>
+
+<div id="section2" class="container-fluid " style="padding-top:70px;padding-bottom:70px; background-color:#3333ff; color: #fff;
+  text-align: center;  ">
+ 
+  <div class="container-fluid">
+  <h2>About the Property</h2>
+  <h4>L'Ile D'Elle</h4> 
+  <p>Situated in a quiet rural village 3 miles from Marans (Charante Maratine) and 15 miles from La Rochelle.</p>
+  <p> Property consists of five bedrooms, two bathrooms and two large kitchen/living rooms.</p>
+  <p>Detached garden and parking space by river.</p>
+</div>
+
+ <div id="section3" class="container-fluid " style="padding-top:70px;padding-bottom:70px background-color:#3333ff;">
+  <!-- views -->
+  <div class="container-fluid text-center ;">
+  <h2>Pictures</h2>
+  <h4>L'Ile D'Elle</h4>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    {
+      box-sizing: border-box;
+    }
+
+    .row{
+      display:flex;
+}
+
+ .column{
+    flex: 25%;
+    padding: 5px; 
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+
+    <img src="viewriverside.png" alt="5Terre" style="width: 100%">
+  <div class="desc">View towards house from riverbank</div>
+</div>
+
+  <div class="column">
+    <img src="topentry.jpg" alt="Forest" style="width: 100%">
+  <div class="desc">Top approach to house</div>
+</div>
+
+<div class="column">
+    <img src="houseright.jpg" alt="Northern Lights" style="width:100%"
+  <div class="desc">House on right hand side</div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+</div>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+<div id="section41" class="container-fluid" style="padding-top:70px;padding-bottom:70px
+  background-color: ="#3333ff">
+  <h1>Contact</h1>
+ <div class="container-fluid bg-blue">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Wales,</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" ty
+          pe="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+</div>
+<div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+  <h1>Map of Area</h1>
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(46.331276, -0.948994);
+var mapProp = {center:myCenter, zoom:10, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/
+js?key=AIzaSyBqt__t6S7w1MpQTearclKkl7S1g2XbkIU&callback=myMap
+"></script>
+</div>
+<div id="section5" class="container-fluid" style="padding-top:70px;padding-bottom:70px" >
+  
+  <div class="container-fluid">
+  <h2>Views</h2>
+  <h4>L'Ile D'Elle</h4> 
+   <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 50%;
+      height: 50%;
+      text-align="center"
+  }
+  </style>
+</head>
+<body>
+
+<div class="container mt-6">
+
+<h2>House Views</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel"data-slide-to="3"></li>
+      <li data-target="#myCarousel"data-slide-to="4"></li>
+        <li data-target="#myCarousel"data-slide-to="5"></li>
+    
+    </li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="viewriverside.png" alt="Riverside"
+      width="800" height="300" img-align= "center">
+    </div>
+    <div class="carousel-item">
+      <img src="kitchen.jpg" alt="kitchen" width="800" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src="livingroom.jpg" alt="livingroom" width="800" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src="kitchen3.jpg" alt="kitchen3" width="800" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src="bedroommain.jpg" alt="bedroom2" width="800" height="300">
+    </div>
+    <div class="carousel-item">
+      <img src="lroom(3).jpg" alt="livingroom" width="800" height="300">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+<break>
+</div>
+
+</body
+
+</html>
+
+
